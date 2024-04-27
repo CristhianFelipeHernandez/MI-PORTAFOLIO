@@ -1,2 +1,360 @@
-# MI-PORTAFOLIO
-Este es mi portafolio hecho en HTML,CSS y JAVASCRIPT
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Cristhian</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Imagen de WhatsApp 2024-04-25 a las 12.48.31_b23c904f.jpg" alt="">
+            </div>
+            <h1>CRISTHIAN FELIPE HERNANDEZ</h1>
+            <h2>Jr Software Developer</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-github"></i></i></a>
+                <a href="https://x.com/IsNocteem?t=z7sweLfveI6txmccUlCSeA&s=09"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/cris._.luxe?igsh=bmhkdWE5bWV1OW51"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="https://www.linkedin.com/in/cristhian-felipe-hernandez-mendez-75419428b"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.tiktok.com/@cris_xit_?_t=8lpOdYLene2&_r=1"><i class="fa-brands fa-tiktok"></i></i></a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SOBRE MÍ</h2>
+            <p>
+                <span>Hola, soy Cristhian</span>
+                Soy un desarrollador back end especializado en la creación de la lógica y
+                funcionalidad que impulsa las aplicaciones web y servicios en línea. Con bases solidas en la
+                construcción de sistemas robustos y escalables utilizando tecnologías como Java, Python y motores de bases de datos como SQL,
+                apasionado por resolver desafíos técnicos y optimizar el rendimiento, estoy comprometido en ofrecer soluciones back end que 
+                impulsen la experiencia del usuario y la eficacia de la aplicación en su conjunto, como en la prestación de soporte técnico,
+                estoy capacitado para abordar tanto los desafíos de desarrollo como las necesidades de mantenimiento y resolución de incidencias.
+                Mi capacidad para comunicar de manera efectiva y colaborar con equipos multidisciplinarios asegura la entrega de soluciones sólidas y orientadas al usuario
+            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>DATOS PERSONALES</h3>
+                    <ul>
+                    
+                        <li>
+                            <strong>Teléfono</strong>
+                            +57 3132887644
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            cristhianhernandez.contactme@gmail.com
+
+                        </li>
+                    
+                        <li>
+                            <strong>Pais</strong>
+                            Colombia
+                        </li>
+                        <li>
+                            <strong>Ciudad</strong>
+                            Bogotá
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>EN BUSCA DE EMPLEO</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>INTERESES</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="archivos/CV Cristhian Hernandez (1).pdf" download class="download-btn">Descarga CV</a> <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>
+                HABILIDADES</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>HABILIDADES TECNICAS</h3>
+                    <div class="skill">
+                        <span>JAVASCRIPT</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PYTHON</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JAVA</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>HABILIDADES PROFESIONALES</h3>
+                    <div class="skill">
+                        <span>COMUNICACION</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TRABAJO EN EQUIPO</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CREATIVIDAD</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>DEDICACIÓN</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>ANALISIS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>CURRICULUM</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>EDUCACION</h3>
+                    <div class="item izq">
+                        <h4>Tecnico Profesional en Desarollo Web y MUltimedia</h4>
+                        <span class="casa">TEINCO | Corporación Tecnológica Industrial Colombiana</span>
+                        <span class="fecha">2021-2023</span>
+
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Técnico Profesional en Soporte de Sistemas e Informática</h4>
+                        <span class="casa">CUN | Corporación Unificada Nacional de Educación Superior</span>
+                        <span class="fecha">2024 - En Curso</span>
+                        
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>EXPERIENCIA DE TRABAJO</h3>
+                    <div class="item der">
+                        <h4>Aprendiz Soporte Tecnico</h4>
+                        <span class="casa">MCT SAS</span>
+                        <span class="fecha">Junio – Diciembre (2022)</span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Tecnico de Servicios y Garantias</h4>
+                        <span class="casa">Uniples</span>
+                        <span class="fecha">Marzo – Diciembre (2023)</span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Jr Software Developer </h4>
+                        <span class="casa">FreeLance</span>
+                        <span class="fecha">Actualidad</span>
+                    <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/animeyou.PNG" alt="">
+                    <div class="overlay">
+                        <a href="/proyecto 1/inicio.html" onclick="seleccionar()">ANIME YOU</a>
+                        <p>Pagina web de anime</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="contenedor-contacto">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <h3>EMAIL:</h3>
+                        <p>cristhianhernandez.contactme@gmail.com
+                        </p>
+                    </div>
+                    <div class="info">
+                        <h3>TEELEFONO:</h3>
+                        <p>+57 3132887644</p>
+                    </div>
+                    <div class="info">
+                        <h3>PAIS</h3>
+                        <p>Colombia</p>
+                    </div>
+                    <div class="info">
+                        <h3>CIUDAD:</h3>
+                        <p>Bogota</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Nombre...">
+                    <input type="text" placeholder="Correo...">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar<i class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Creado por Cristhian Felipe Hernandez Mende( 25-04-2024)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
